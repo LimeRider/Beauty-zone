@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Саня-гей</title>
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__container">
+          <nav class="header__nav">
+            <a href="#">
+              <img src="./images-beauty-zone/logo.svg" alt="Лого" />
+            </a>
+            <ul class="header__menu">
+              <li><a class="link" href="#intro-section">Про нас</a></li>
+              <li><a class="link" href="#advantages-section">Чому ми</a></li>
+              <li><a class="link" href="#format-section">Наші процедури</a></li>
+              <li><a class="link" href="#contact-section">Контакти</a></li>
+            </ul>
+          </nav>
+          <div class="header__socials">
+            <a href="#">
+              <img
+                src="./images-beauty-zone/icon-phone.svg"
+                alt="Іконка-телефону"
+              />
+            </a>
+            <a href="#">
+              <img src="./images-beauty-zone/icon-fb.svg" alt="Іконка-фб" />
+            </a>
+            <a href="https://www.instagram.com/p/DPzJBwRjm93/?img_index=2">
+              <img src="./images-beauty-zone/icon-inst.svg" alt="Іконка інст" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero-section">
+        <div class="container">
+          <div class="hero-section__container">
+            <h1 class="hero-section__title">Beauty Zone</h1>
+
+            <button
+              onclick="document.getElementById('modal').showModal()"
+              class="button"
+              type="button"
+            >
+              Замовити дзвінок
+            </button>
+            <dialog class="modal" id="modal">
+              <h2>Замовити дзвінок</h2>
+              <p>Запишіться безкоштовно та отримайте подарунок</p>
+              <form method="dialog">
+                <button>Close</button>
+              </form>
+            </dialog>
+            <p class="hero-section__text">
+              Запишись та отримай безкоштовну
+              <br />
+              консультацію нашого косметолога
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="intro-section"></section>
+      <section class="advantages-section"></section>
+      <section class="format-section"></section>
+      <section class="contact-section"></section>
+    </main>
+    <footer></footer>
+  </body>
+</html>

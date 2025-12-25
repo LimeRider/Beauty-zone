@@ -1,0 +1,32 @@
+.header {
+  padding-top: 32px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background: transparent; /* прозорий */
+  backdrop-filter: blur(10px);
+
+  &__container {
+    display: flex;
+    align-items: center;
+    gap: 240px;
+  }
+
+  &__nav {
+    @extend .header__container;
+    padding-left: 99px;
+  }
+
+  &__menu {
+    display: flex;
+    gap: 56px;
+    list-style: none;
+  }
+
+  &__socials {
+    display: flex;
+    gap: 32px;
+  }
+}

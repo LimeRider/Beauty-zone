@@ -1,0 +1,20 @@
+.button {
+  color: $primary_light;
+  background-color: $brand_light;
+  width: 219px;
+  height: 53px;
+  opacity: 1;
+  gap: 10px;
+  border-radius: 32px;
+  border: currentColor;
+  padding-top: 16px;
+  padding-right: 32px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+  font-family: Roboto;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 100%;
+  cursor: pointer;
+  margin-bottom: 14px;
+}

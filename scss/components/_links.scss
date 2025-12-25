@@ -1,0 +1,8 @@
+.link {
+  text-decoration: none;
+  color: $brand_dark;
+
+  &:hover {
+    color: $brand_light;
+  }
+}
