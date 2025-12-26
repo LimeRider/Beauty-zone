@@ -1,0 +1,30 @@
+.intro-section {
+  &__container {
+    font-family: Play;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 64px;
+    width: 529px;
+    height: 148px;
+    opacity: 1;
+  }
+  &__text-brand {
+    color: $brand_light;
+  }
+
+  &__content {
+    font-family: Roboto;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 22px;
+    line-height: 38px;
+  }
+
+  &__text-span {
+    font-family: Roboto;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 38px;
+    text-transform: capitalize;
+  }
+}
