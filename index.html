@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html lang="uk">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Саня-гей</title>
@@ -10,29 +22,29 @@
     <header class="header">
       <div class="container">
         <div class="header__container">
+          <a href="#">
+            <img src="./images/logo.svg" alt="Лого" />
+          </a>
           <nav class="header__nav">
-            <a href="#">
-              <img src="./images-beauty-zone/logo.svg" alt="Лого" />
-            </a>
             <ul class="header__menu">
-              <li><a class="link" href="#intro-section">Про нас</a></li>
+              <li>
+                <a class="link" href="#intro-section">Про нас</a>
+              </li>
               <li><a class="link" href="#advantages-section">Чому ми</a></li>
               <li><a class="link" href="#format-section">Наші процедури</a></li>
               <li><a class="link" href="#contact-section">Контакти</a></li>
             </ul>
           </nav>
           <div class="header__socials">
-            <a href="#">
-              <img
-                src="./images-beauty-zone/icon-phone.svg"
-                alt="Іконка-телефону"
-              />
-            </a>
-            <a href="#">
-              <img src="./images-beauty-zone/icon-fb.svg" alt="Іконка-фб" />
+            <a href="tel:+33743606480">
+              <img src="./images/icon-phone.svg" alt="Іконка-телефону"
+            /></a>
+
+            <a href="https://www.facebook.com/alexandrhakaviy?locale=uk_UA">
+              <img src="./images/icon-fb.svg" alt="Іконка-фб" />
             </a>
             <a href="https://www.instagram.com/p/DPzJBwRjm93/?img_index=2">
-              <img src="./images-beauty-zone/icon-inst.svg" alt="Іконка інст" />
+              <img src="./images/icon-inst.svg" alt="Іконка інст" />
             </a>
           </div>
         </div>
@@ -66,54 +78,61 @@
           </div>
         </div>
       </section>
-      <section class="intro-section">
-        <div class="container">
-          <div class="intro-section__container">
-            <h2>
-              Перевтілюйтесь в
-              <span class="intro-section__text-brand"> Beauty Zone!</span>
-            </h2>
-            <h3 class="intro-section__content">
-              Наша косметологічна клініка пропонує вам професійні послуги
-              <br />з догляду за шкірою обличчя та тіла.
-            </h3>
-            <h3 class="intro-section__content">
-              B <span class="intro-section__text-span"> beauty zone</span> ми
-              гарантуємо найвищі стандарти якості <br />
-              та приємний сервіс. Наші косметологічні процедури та препарати
+      <section class="intro-section" id="intro-section">
+        <div class="intro-section__container">
+          <h2 class="intro-section__title">
+            Перевтілюйтесь в
+            <span class="text-brand"> Beauty Zone!</span>
+          </h2>
+          <div class="intro-section__content">
+            <p>
+              Наша косметологічна клініка пропонує вам професійні послуги <br />
+              з догляду за шкірою обличчя та тіла.
+            </p>
+            <p>
+              B <strong> Beauty Zone</strong> ми гарантуємо найвищі стандарти
+              якості <br />та приємний сервіс. Наші косметологічні процедури та
+              препарати допоможуть вам підтримувати свою красу та молодість.
               <br />
-              допоможуть вам підтримувати свою красу та молодість. <br />
               З нами краса назавжди!
-            </h3>
+            </p>
           </div>
-          <div class="images">
-            <img
-              class="images__woman-before"
-              src="/images-beauty-zone/woman-before.svg"
-              alt=":Жуна до"
-            />
-            <img
-              class="images__star-black"
-              src="/images-beauty-zone/star-black.svg"
-              alt="Синя зірка"
-            />
-            <img
-              class="images__woman-after"
-              src="/images-beauty-zone/woman-after.svg"
-              alt=":Жуна після"
-            />
+        </div>
 
-            <img
-              class="images__star-norm"
-              src="/images-beauty-zone/star-norm.svg"
-              alt="Голуба зірка"
-            />
+        <div class="images">
+          <img
+            class="images__star-norm"
+            src="./images/star-norm.svg"
+            alt="Голуба зірка"
+          />
+          <img
+            class="images__woman-before"
+            src="./images/woman-before.svg"
+            alt=":Жуна до"
+          />
+          <img
+            class="images__star-black"
+            src="./images/star-black.svg"
+            alt="Синя зірка"
+          />
+          <img
+            class="images__woman-after"
+            src="./images/woman-after.svg"
+            alt=":Жуна після"
+          />
+        </div>
+      </section>
+      <section class="advantages-section" id="advantages-section">
+        <div class="container">
+          <div class="advantages-section__container">
+            <h2 class="text-title">
+              Чому люди <span class="text-brand">обирають нас</span>
+            </h2>
           </div>
         </div>
       </section>
-      <section class="advantages-section"></section>
-      <section class="format-section"></section>
-      <section class="contact-section"></section>
+      <section class="format-section" id="format-section"></section>
+      <section class="contact-section" id="contact-section"></section>
     </main>
     <footer></footer>
   </body>
