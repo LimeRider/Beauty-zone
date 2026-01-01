@@ -1,8 +1,10 @@
 .header {
-  padding-top: 32px;
-  position: absolute;
+  position: absolute; /* 👈 ключове */
   top: 0;
+  left: 0;
   width: 100%;
+  z-index: 10;
+
   background: transparent;
   backdrop-filter: blur(10px);
 
