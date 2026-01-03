@@ -1,67 +1,68 @@
 .intro-section {
-  position: relative;
+  display: flex;
   &__container {
     padding-left: 100px;
+    flex: 1;
+  }
+  &__title {
     font-family: Play;
     font-weight: 700;
     font-style: Bold;
-    font-size: 50px;
-    width: 600px;
+    font-size: 64px;
+    width: 500px;
     height: 148px;
     opacity: 1;
-  }
-  &__text-brand {
-    color: $brand_light;
+    margin-bottom: 18px;
   }
 
   &__content {
     font-family: Roboto;
+    width: 709px;
+    height: 152px;
     font-weight: 400;
     font-style: Regular;
     font-size: 22px;
     line-height: 38px;
   }
-
-  &__text-span {
-    font-family: Roboto;
-    font-weight: 600;
-    font-size: 22px;
-    line-height: 38px;
-    text-transform: capitalize;
-  }
 }
 
 .images {
+  position: relative;
+  flex: 1;
   margin: 0;
   padding: 0;
-  &__woman-before {
-    position: absolute;
-    box-shadow: 0px 4px 4px 0px #a8c6f533;
 
+  &__woman-before {
+    width: 335px;
+    height: 328px;
+    margin-right: 268px;
+    margin-left: auto;
+    box-shadow: 0px 4px 4px 0px rgba(168, 198, 245, 0.2);
     margin-bottom: 40px;
-    top: 0;
-    left: 841px;
-    border-radius: 500px;
+    border-radius: 50%;
   }
 
   &__woman-after {
-    position: absolute;
-
-    left: 1013px;
-    border-radius: 500px;
-    top: 400px;
+    height: 328px;
+    width: 342px;
+    margin-right: 100px;
+    margin-left: auto;
+    border-radius: 50%;
   }
 
   &__star-black {
+    width: 64px;
+    height: 64px;
     position: absolute;
-
-    top: 360px;
-    left: 958px;
+    right: 395px;
+    top: 336px;
   }
 
   &__star-norm {
+    width: 40px;
+    height: 40px;
+    right: 73px;
     position: absolute;
-    top: 32px;
-    left: 1312px;
+    top: 18px;
   }
 }

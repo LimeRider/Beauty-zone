@@ -1,21 +1,21 @@
 .header {
-  padding-top: 32px;
   position: absolute;
   top: 0;
+  left: 0;
   width: 100%;
+  z-index: 10;
   background: transparent;
   backdrop-filter: blur(10px);
 
   &__container {
     display: flex;
     align-items: center;
-    gap: 240px;
+    justify-content: space-around;
   }
 
-  &__nav {
-    @extend .header__container;
-    padding-left: 99px;
-  }
+  // &__nav {
+  //   @extend .header__container;
+  // }
 
   &__menu {
     display: flex;
@@ -24,6 +24,7 @@
   }
 
   &__socials {
+    align-items: center;
     display: flex;
     gap: 32px;
   }
