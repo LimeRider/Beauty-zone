@@ -1,0 +1,47 @@
+.contact-section {
+  &__container {
+    display: flex;
+  }
+
+  &__map {
+    width: 605px;
+    height: 481px;
+    opacity: 1;
+    border-radius: 32px;
+    margin-left: 176px;
+    margin-right: 32px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    width: 422px;
+    height: 482px;
+    top: 0.87px;
+    opacity: 1;
+    border-radius: 32px;
+
+    background-color: $brand_dark;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__text {
+    font-family: Roboto;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 100%;
+    text-align: center;
+    color: $primary_light;
+    width: 274px;
+    height: 52px;
+    margin-left: 72px;
+  }
+
+  &__form-field {
+    padding: 0 56px;
+    display: flex;
+
+    margin-bottom: 18px;
+  }
+}

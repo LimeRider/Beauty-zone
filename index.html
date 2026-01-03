@@ -184,26 +184,113 @@
       </section>
       <section class="format-section" id="format-section">
         <div class="container">
+          <h2 class="text-title format-section__text-title">
+            Наші <span class="text-brand">процедури </span>
+          </h2>
           <div class="format-section__container">
-            <h2 class="text-title format-section__text-title">
-              Наші <span class="text-brand">процедури </span>
-            </h2>
             <article class="format-section__card">
-              <img src="./images/Mask-for-face.jpg" alt="Маска для обличчя" />
-              <p>Маски для обличчя</p>
+              <img
+                class="format-section__image"
+                src="./images/Mask-for-face.jpg"
+                alt="Маска для обличчя"
+              />
+              <p class="format-section__card-text">Маски <br />для обличчя</p>
             </article>
             <article class="format-section__card">
-              <img src="./images/botox.jpg" alt="Інєкція для обличчя" />
-              <p>Ін'єкції для обличчя</p>
+              <img
+                class="format-section__image"
+                src="./images/botox.jpg"
+                alt="Інєкція для обличчя"
+              />
+              <p class="format-section__card-text">
+                Ін'єкції <br />для обличчя
+              </p>
             </article>
             <article class="format-section__card">
-              <img src="./images/clear-face.jpg" alt="очищення обличчя" />
-              <p>Очищення обличчя</p>
+              <img
+                class="format-section__image"
+                src="./images/clear-face.jpg"
+                alt="очищення обличчя"
+              />
+              <p class="format-section__card-text">Очищення обличчя</p>
             </article>
           </div>
         </div>
       </section>
-      <section class="contact-section" id="contact-section"></section>
+      <section class="contact-section" id="contact-section">
+        <div class="container">
+          <h2 class="text-title">
+            Як нас <span class="text-brand">знайти </span>
+          </h2>
+          <div class="contact-section__container">
+            <iframe
+              class="contact-section__map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.9400613933917!2d30.5181289!3d50.4422171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8b5f6338d%3A0x25c7f06ad686451c!2z0LHRg9C70YzQstCw0YAg0KLQsNGA0LDRgdCwINCo0LXQstGH0LXQvdC60LAsIDUsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1767336183725!5m2!1suk!2sua"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <div class="contact-section__form">
+              <h3 class="contact-section__text">
+                Запишіться <span class="text-brand">безкоштовно</span> та
+                отримайте подарунок
+              </h3>
+              <form name="contact-form" autocomplete="off">
+                <div class="contact-section__form-field input">
+                  <label class="input__label visually-hidden" for="user-name">
+                    Ваше імʼя та призвіще
+                  </label>
+                  <input
+                    class="input__control"
+                    type="text"
+                    name="user-name"
+                    id="user-name"
+                    placeholder=" Ваше імʼя та призвіще"
+                    required
+                  />
+                </div>
+                <div class="contact-section__form-field input">
+                  <label class="input__label visually-hidden" for="user-tel">
+                    Ваш номер телефону
+                  </label>
+                  <input
+                    class="input__control"
+                    type="tel"
+                    name="user-tel"
+                    id="user-tel"
+                    placeholder="Ваш номер телефону"
+                    pattern="^\+[0-9]{12}"
+                    required
+                  />
+                </div>
+
+                <div class="contact-section__form-field input">
+                  <label class="input__label visually-hidden" for="user-email">
+                    Ваша електронна пошта
+                  </label>
+                  <input
+                    class="input__control"
+                    type="email"
+                    name="user-email"
+                    id="user-email"
+                    placeholder="Ваша електронна пошта"
+                    required
+                  />
+                </div>
+                <button class="form-button" type="submit">
+                  Записатись безкоштовно
+                </button>
+                <p class="form-terms">
+                  Натискаючи на кнопку я погоджуюсь з
+                  <a class="form-terms__link" href="#">
+                    політикою конфіденційності
+                  </a>
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer></footer>
   </body>
