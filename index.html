@@ -63,13 +63,79 @@
             >
               Замовити дзвінок
             </button>
+
             <dialog class="modal" id="modal">
-              <h2>Замовити дзвінок</h2>
-              <p>Запишіться безкоштовно та отримайте подарунок</p>
-              <form method="dialog">
-                <button>Close</button>
-              </form>
+              <div class="modal__container">
+                <h2 class="modal__title">Замовити дзвінок</h2>
+                <h3 class="contact-section__text">
+                  Запишіться <span class="text-brand">безкоштовно</span> та
+                  отримайте подарунок
+                </h3>
+                <form
+                  class="contact-form"
+                  name="contact-form"
+                  autocomplete="off"
+                >
+                  <div class="contact-section__form-field input">
+                    <label class="input__label visually-hidden" for="user-name">
+                      Ваше імʼя та призвіще
+                    </label>
+                    <input
+                      class="input__control"
+                      type="text"
+                      name="user-name"
+                      id="user-name"
+                      placeholder=" Ваше імʼя та призвіще"
+                      required
+                    />
+                  </div>
+                  <div class="contact-section__form-field input">
+                    <label class="input__label visually-hidden" for="user-tel">
+                      Ваш номер телефону
+                    </label>
+                    <input
+                      class="input__control"
+                      type="tel"
+                      name="user-tel"
+                      id="user-tel"
+                      placeholder="Ваш номер телефону"
+                      pattern="^\+[0-9]{12}"
+                      required
+                    />
+                  </div>
+
+                  <div class="contact-section__form-field input">
+                    <label
+                      class="input__label visually-hidden"
+                      for="user-email"
+                    >
+                      Ваша електронна пошта
+                    </label>
+                    <input
+                      class="input__control"
+                      type="email"
+                      name="user-email"
+                      id="user-email"
+                      placeholder="Ваша електронна пошта"
+                      required
+                    />
+                  </div>
+                  <button class="form-button" type="submit">
+                    Записатись безкоштовно
+                  </button>
+                  <p class="form-terms">
+                    Натискаючи на кнопку я погоджуюсь з
+                    <a class="form-terms__link" href="#">
+                      політикою конфіденційності
+                    </a>
+                  </p>
+                </form>
+                <form method="dialog">
+                  <button class="button-modal-close"></button>
+                </form>
+              </div>
             </dialog>
+
             <p class="hero-section__text">
               Запишись та отримай безкоштовну
               <br />
@@ -187,33 +253,51 @@
           <h2 class="text-title format-section__text-title">
             Наші <span class="text-brand">процедури </span>
           </h2>
-          <div class="format-section__container">
-            <article class="format-section__card">
-              <img
-                class="format-section__image"
-                src="./images/Mask-for-face.jpg"
-                alt="Маска для обличчя"
-              />
-              <p class="format-section__card-text">Маски <br />для обличчя</p>
-            </article>
-            <article class="format-section__card">
-              <img
-                class="format-section__image"
-                src="./images/botox.jpg"
-                alt="Інєкція для обличчя"
-              />
-              <p class="format-section__card-text">
-                Ін'єкції <br />для обличчя
-              </p>
-            </article>
-            <article class="format-section__card">
-              <img
-                class="format-section__image"
-                src="./images/clear-face.jpg"
-                alt="очищення обличчя"
-              />
-              <p class="format-section__card-text">Очищення обличчя</p>
-            </article>
+          <div class="format-section__slider">
+            <button
+              class="format-section__button carousel-button prev"
+              type="button"
+            >
+              <svg width="16" height="16">
+                <use href="./images/Arrow2.svg"></use>
+              </svg>
+            </button>
+            <div class="format-section__container">
+              <article class="format-section__card">
+                <img
+                  class="format-section__image"
+                  src="./images/Mask-for-face.jpg"
+                  alt="Маска для обличчя"
+                />
+                <p class="format-section__card-text">Маски <br />для обличчя</p>
+              </article>
+              <article class="format-section__card">
+                <img
+                  class="format-section__image"
+                  src="./images/botox.jpg"
+                  alt="Інєкція для обличчя"
+                />
+                <p class="format-section__card-text">
+                  Ін'єкції <br />для обличчя
+                </p>
+              </article>
+              <article class="format-section__card">
+                <img
+                  class="format-section__image"
+                  src="./images/clear-face.jpg"
+                  alt="очищення обличчя"
+                />
+                <p class="format-section__card-text">Очищення обличчя</p>
+              </article>
+            </div>
+            <button
+              class="format-section__button carousel-button next"
+              type="button"
+            >
+              <svg width="16" height="16">
+                <use href="./images/Arrow2.svg"></use>
+              </svg>
+            </button>
           </div>
         </div>
       </section>
@@ -235,7 +319,8 @@
                 Запишіться <span class="text-brand">безкоштовно</span> та
                 отримайте подарунок
               </h3>
-              <form name="contact-form" autocomplete="off">
+
+              <form class="contact-form" name="contact-form" autocomplete="off">
                 <div class="contact-section__form-field input">
                   <label class="input__label visually-hidden" for="user-name">
                     Ваше імʼя та призвіще
@@ -292,6 +377,91 @@
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__container">
+          <nav class="footer__nav">
+            <div class="footer__logo">
+              <a href="#">
+                <img src="./images/logo.svg" alt="Лого" />
+              </a>
+            </div>
+            <ul class="footer__menu">
+              <li>
+                <a class="footer__link" href="#intro-section">Про нас</a>
+              </li>
+              <li>
+                <a class="footer__link" href="#advantages-section">Чому ми</a>
+              </li>
+              <li>
+                <a class="footer__link" href="#format-section"
+                  >Наші процедури</a
+                >
+              </li>
+              <li>
+                <a class="footer__link" href="#contact-section">Контакти</a>
+              </li>
+            </ul>
+            <address class="footer__adress">
+              <div class="footer__contacts">
+                <ul class="footer__address-list">
+                  <li>
+                    <a class="footer__adress-link" href="tel:+38(096)0000007">
+                      +38(096)0000007
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="footer__adress-link"
+                      href="mailto:beautyzone@gmail.com"
+                    >
+                      beautyzone@gmail.com
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="footer__adress-link"
+                      href="https://maps.app.goo.gl/EbqNGW7HAxwy9xip8"
+                      target="_blank"
+                    >
+                      Україна, м. Київ, вул. Тараса Шевченка 5
+                    </a>
+                  </li>
+                </ul>
+                <div class="footer__socials">
+                  <a href="tel:+33743606480">
+                    <img
+                      src="./images/icon-phone-white.svg"
+                      alt="Іконка-телефону"
+                  /></a>
+
+                  <a
+                    href="https://www.facebook.com/alexandrhakaviy?locale=uk_UA"
+                  >
+                    <img src="./images/icon-fb-white.svg" alt="Іконка-фб" />
+                  </a>
+                  <a
+                    href="https://www.instagram.com/p/DPzJBwRjm93/?img_index=2"
+                  >
+                    <img src="./images/icon-inst-white.svg" alt="Іконка інст" />
+                  </a>
+                </div>
+              </div>
+            </address>
+            <div class="footer__address-info">
+              <a class="footer__adress-link" href="#" target="_blank">
+                Політика конфіденційності</a
+              >
+              <p class="footer__address-copyright">&copy; 2022 Дані захищені</p>
+            </div>
+          </nav>
+          <img
+            class="footer__img"
+            src="/images/footer-img.svg"
+            alt="Хз якась херня"
+          />
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

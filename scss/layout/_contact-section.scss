@@ -1,6 +1,7 @@
 .contact-section {
   &__container {
     display: flex;
+    margin-bottom: 96px;
   }
 
   &__map {
@@ -15,12 +16,13 @@
   &__form {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 422px;
     height: 482px;
     top: 0.87px;
     opacity: 1;
     border-radius: 32px;
-
+    background-image: url(/images/bg-form.svg);
     background-color: $brand_dark;
     background-repeat: no-repeat;
     background-size: cover;
@@ -35,7 +37,6 @@
     color: $primary_light;
     width: 274px;
     height: 52px;
-    margin-left: 72px;
   }
 
   &__form-field {
@@ -44,4 +45,27 @@
 
     margin-bottom: 18px;
   }
+}
+
+.form-terms {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  color: rgba(116, 114, 114, 1);
+  width: 213px;
+  height: 36px;
+  opacity: 1;
+  margin: 8px 105px;
+
+  &__link {
+    color: rgba(116, 114, 114, 1);
+  }
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
