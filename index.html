@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="uk">
   <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,7 +26,7 @@
     <header class="header">
       <div class="container">
         <div class="header__container">
-          <a href="#">
+          <a class="header__logo" href="#">
             <img src="./images/logo.svg" alt="Лого" />
           </a>
           <nav class="header__nav">
@@ -35,6 +39,47 @@
               <li><a class="link" href="#contact-section">Контакти</a></li>
             </ul>
           </nav>
+          <button
+            onclick="document.getElementById('mobile-menu').showModal()"
+            class="header__burger"
+            type="button"
+          >
+            <img src="./images/burger.svg" alt="мобільне меню" />
+          </button>
+
+          <dialog class="mobile-menu" id="mobile-menu">
+            <a class="mobile-menu__logo" href="#">
+              <img src="./images/logo.svg" alt="Лого" />
+            </a>
+            <nav class="mobile-menu__nav">
+              <ul class="mobile-menu__menu">
+                <li>
+                  <a class="link" href="#intro-section">Про нас</a>
+                </li>
+                <li><a class="link" href="#advantages-section">Чому ми</a></li>
+                <li>
+                  <a class="link" href="#format-section">Наші процедури</a>
+                </li>
+                <li><a class="link" href="#contact-section">Контакти</a></li>
+              </ul>
+
+              <div class="mobile-menu__socials">
+                <a href="tel:+33743606480">
+                  <img src="./images/icon-phone.svg" alt="Іконка-телефону"
+                /></a>
+
+                <a href="https://www.facebook.com/alexandrhakaviy?locale=uk_UA">
+                  <img src="./images/icon-fb.svg" alt="Іконка-фб" />
+                </a>
+                <a href="https://www.instagram.com/p/DPzJBwRjm93/?img_index=2">
+                  <img src="./images/icon-inst.svg" alt="Іконка інст" />
+                </a>
+              </div>
+            </nav>
+            <form method="dialog">
+              <button class="button-mobile-menu-close"></button>
+            </form>
+          </dialog>
           <div class="header__socials">
             <a href="tel:+33743606480">
               <img src="./images/icon-phone.svg" alt="Іконка-телефону"
@@ -255,43 +300,93 @@
           </h2>
           <div class="format-section__slider">
             <button
-              class="format-section__button carousel-button prev"
+              class="format-section__button carousel-button-prev"
               type="button"
             >
               <svg width="16" height="16">
                 <use href="./images/Arrow2.svg"></use>
               </svg>
             </button>
-            <div class="format-section__container">
-              <article class="format-section__card">
-                <img
-                  class="format-section__image"
-                  src="./images/Mask-for-face.jpg"
-                  alt="Маска для обличчя"
-                />
-                <p class="format-section__card-text">Маски <br />для обличчя</p>
-              </article>
-              <article class="format-section__card">
-                <img
-                  class="format-section__image"
-                  src="./images/botox.jpg"
-                  alt="Інєкція для обличчя"
-                />
-                <p class="format-section__card-text">
-                  Ін'єкції <br />для обличчя
-                </p>
-              </article>
-              <article class="format-section__card">
-                <img
-                  class="format-section__image"
-                  src="./images/clear-face.jpg"
-                  alt="очищення обличчя"
-                />
-                <p class="format-section__card-text">Очищення обличчя</p>
-              </article>
+            <div class="format-section__container swiper-container">
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                  <article class="format-section__card">
+                    <img
+                      class="format-section__image"
+                      src="./images/Mask-for-face.jpg"
+                      alt="Маска для обличчя"
+                    />
+                    <p class="format-section__card-text">
+                      Маски <br />для обличчя
+                    </p>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="format-section__card">
+                    <img
+                      class="format-section__image"
+                      src="./images/botox.jpg"
+                      alt="Інєкція для обличчя"
+                    />
+                    <p class="format-section__card-text">
+                      Ін'єкції <br />для обличчя
+                    </p>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="format-section__card">
+                    <img
+                      class="format-section__image"
+                      src="./images/clear-face.jpg"
+                      alt="очищення обличчя"
+                    />
+                    <p class="format-section__card-text">Очищення обличчя</p>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="format-section__card">
+                    <img
+                      class="format-section__image"
+                      src="./images/Mask-for-face.jpg"
+                      alt="Маска для обличчя"
+                    />
+                    <p class="format-section__card-text">
+                      Маски <br />для обличчя
+                    </p>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="format-section__card">
+                    <img
+                      class="format-section__image"
+                      src="./images/botox.jpg"
+                      alt="Інєкція для обличчя"
+                    />
+                    <p class="format-section__card-text">
+                      Ін'єкції <br />для обличчя
+                    </p>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="format-section__card">
+                    <img
+                      class="format-section__image"
+                      src="./images/clear-face.jpg"
+                      alt="очищення обличчя"
+                    />
+                    <p class="format-section__card-text">Очищення обличчя</p>
+                  </article>
+                </li>
+              </ul>
+              <div class="pagination">
+                <span class="pagination__button"> </span>
+                <span class="pagination__button"> </span>
+                <span class="pagination__button"> </span>
+                <span class="pagination__button"> </span>
+              </div>
             </div>
             <button
-              class="format-section__button carousel-button next"
+              class="format-section__button carousel-button-next"
               type="button"
             >
               <svg width="16" height="16">
@@ -463,5 +558,7 @@
         </div>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="/swiper.js"></script>
   </body>
 </html>

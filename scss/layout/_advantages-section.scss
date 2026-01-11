@@ -1,12 +1,25 @@
 .advantages-section {
-  background-image: url(../images/bg-advantages.jpg);
+  background-image: url(../images/advantages-bg-mobile.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 180px 190px;
+  padding: 140px;
+  @media screen and (min-width: $bp-tablet) {
+    background-image: url(../images/bg-advantages.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 180px 190px;
+  }
 
   &__advantages {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    @media screen and (min-width: $bp-tablet) {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+    }
   }
   &__card {
     background-color: $primary-light;

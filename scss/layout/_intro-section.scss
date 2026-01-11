@@ -1,28 +1,56 @@
 .intro-section {
   display: flex;
   &__container {
+    width: 320px;
+    height: 347px;
     padding-left: 100px;
-    flex: 1;
+
+    @media screen and (min-width: $bp-desktop) {
+      padding-left: 100px;
+      flex: 1;
+    }
   }
   &__title {
-    font-family: Play;
-    font-weight: 700;
-    font-style: Bold;
-    font-size: 64px;
-    width: 500px;
-    height: 148px;
-    opacity: 1;
-    margin-bottom: 18px;
+    font-family: Roboto;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    width: 264px;
+    height: 76px;
+
+    @media screen and (min-width: $bp-desktop) {
+      font-family: Play;
+      font-weight: 700;
+      font-style: Bold;
+      font-size: 64px;
+      width: 500px;
+      height: 148px;
+      opacity: 1;
+      margin-bottom: 18px;
+    }
   }
 
   &__content {
     font-family: Roboto;
-    width: 709px;
-    height: 152px;
     font-weight: 400;
     font-style: Regular;
-    font-size: 22px;
-    line-height: 38px;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    width: 320px;
+    height: 63px;
+
+    @media screen and (min-width: $bp-desktop) {
+      font-family: Roboto;
+      width: 709px;
+      height: 152px;
+      font-weight: 400;
+      font-style: Regular;
+      font-size: 22px;
+      line-height: 38px;
+    }
   }
 }
 
@@ -40,6 +68,9 @@
     box-shadow: 0px 4px 4px 0px rgba(168, 198, 245, 0.2);
     margin-bottom: 40px;
     border-radius: 50%;
+    @media screen and (max-width: $bp-desktop) {
+      display: none;
+    }
   }
 
   &__woman-after {
@@ -48,14 +79,23 @@
     margin-right: 100px;
     margin-left: auto;
     border-radius: 50%;
+    @media screen and (max-width: $bp-desktop) {
+      display: none;
+    }
   }
 
   &__star-black {
-    width: 64px;
-    height: 64px;
+    width: 40px;
+    height: 40px;
     position: absolute;
-    right: 395px;
-    top: 336px;
+    bottom: 0;
+    @media screen and (min-width: $bp-desktop) {
+      width: 64px;
+      height: 64px;
+      position: absolute;
+      right: 395px;
+      top: 336px;
+    }
   }
 
   &__star-norm {
@@ -64,5 +104,8 @@
     right: 73px;
     position: absolute;
     top: 18px;
+    @media screen and (max-width: $bp-desktop) {
+      display: none;
+    }
   }
 }

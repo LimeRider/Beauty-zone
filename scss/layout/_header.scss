@@ -5,7 +5,9 @@
   width: 100%;
   z-index: 10;
   background: transparent;
-  backdrop-filter: blur(10px);
+  @media screen and (min-width: $bp-tablet) {
+    backdrop-filter: blur(10px);
+  }
 
   &__container {
     display: flex;
@@ -16,16 +18,41 @@
   // &__nav {
   //   @extend .header__container;
   // }
+  &__logo {
+    @media screen and (max-width: $bp-tablet) {
+      margin-left: 20px;
+      margin-top: 16px;
+    }
+  }
 
   &__menu {
-    display: flex;
-    gap: 56px;
-    list-style: none;
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: flex;
+      gap: 56px;
+      list-style: none;
+    }
   }
 
   &__socials {
-    align-items: center;
-    display: flex;
-    gap: 32px;
+    display: none;
+    @media screen and (min-width: $bp-tablet) {
+      align-items: center;
+      display: flex;
+      gap: 32px;
+    }
+  }
+
+  &__burger {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+
+    margin-top: 21px;
+    margin-left: auto;
+    margin-right: 18px;
+    @media screen and (min-width: $bp-tablet) {
+      display: none;
+    }
   }
 }

@@ -17,6 +17,10 @@
     border-radius: 32px;
     background-color: transparent;
     border-color: rgba(116, 114, 114, 1);
+    @media screen and (max-width: $bp-tablet) {
+      width: 193px;
+      height: 14px;
+    }
 
     &:focus {
       border-color: rgba(116, 114, 114, 1);
