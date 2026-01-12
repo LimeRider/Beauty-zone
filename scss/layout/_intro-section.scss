@@ -1,12 +1,15 @@
 .intro-section {
   display: flex;
-  flex-direction: column;
-  @media screen and (min-width: $bp-desktop) {
+
+  @media screen and (max-width: $bp-desktop) {
     display: flex;
+    flex-direction: column;
   }
   &__container {
     height: 347px;
-
+    align-items: center;
+    flex-direction: column;
+    display: flex;
     @media screen and (min-width: $bp-desktop) {
       padding-left: 100px;
       flex: 1;
