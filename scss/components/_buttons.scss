@@ -13,8 +13,95 @@
   padding-left: 32px;
   font-family: Roboto;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 100%;
   cursor: pointer;
   margin-bottom: 14px;
+
+  &:hover {
+    color: $brand_dark;
+    background-color: transparent;
+    border: 2px solid $brand_light;
+  }
+}
+
+.form-button {
+  color: $primary_light;
+  background-color: $brand_light;
+  opacity: 1;
+  gap: 10px;
+  border-radius: 32px;
+  border: currentColor;
+  padding-top: 16px;
+  padding-right: 32px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+  font-family: Roboto;
+  font-style: SemiBold;
+  font-size: 17px;
+  line-height: 100%;
+  cursor: pointer;
+  margin: 0 71px;
+
+  &:hover {
+    color: $primary_light;
+    background-color: transparent;
+    border: 2px solid $brand_light;
+  }
+}
+
+.button-modal-close {
+  position: absolute;
+  cursor: pointer;
+  background-image: url(../images/close.svg);
+  background-color: transparent;
+  background-repeat: no-repeat;
+
+  width: 32px;
+  height: 32px;
+  top: 42px;
+  right: 42px;
+  border: 2px solid transparent;
+}
+
+.format-section__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  fill: $primaary_dark;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid $primaary_dark;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $brand_light;
+    fill: $primary_light;
+    border: 1px solid $brand_light;
+  }
+
+  &.next {
+    transform: rotate(180deg);
+  }
+  @media screen and (max-width: $bp-tablet) {
+    display: none;
+  }
+}
+
+.button-mobile-menu-close {
+  background-image: url(../images/close-mbm.svg);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  cursor: pointer;
+
+  top: 16px;
+  right: 20px;
+  border: 2px solid transparent;
 }

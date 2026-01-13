@@ -1,0 +1,60 @@
+.format-section {
+  &__slider {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding: 0 50px;
+
+    @media screen and (max-width: $bp-tablet) {
+      padding: 0 0;
+    }
+  }
+
+  &__container {
+    overflow: hidden;
+  }
+  &__text-title {
+    margin-top: 0;
+  }
+
+  &__card {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 120px;
+
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 456px;
+    width: 345px;
+    background: linear-gradient(
+      180.05deg,
+      rgba(1, 28, 68, 0) 48.53%,
+      rgba(1, 28, 68, 0.725825) 84.61%,
+      #011c44 101.39%
+    );
+  }
+
+  &__card-text {
+    position: relative;
+    width: 152px;
+    height: 52px;
+    bottom: 32px;
+    left: 115px;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    vertical-align: middle;
+    color: $primary_light;
+  }
+
+  &__image {
+    position: absolute;
+    z-index: -1;
+    object-fit: cover;
+  }
+}
