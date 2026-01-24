@@ -2,6 +2,8 @@
   &__container {
     display: flex;
     margin-bottom: 96px;
+    justify-content: center;
+    gap: 30px;
     @media screen and (max-width: $bp-tablet) {
       display: flex;
       flex-direction: column-reverse;
@@ -19,8 +21,6 @@
       height: 481px;
       opacity: 1;
       border-radius: 32px;
-      margin-left: 176px;
-      margin-right: 32px;
     }
   }
 
